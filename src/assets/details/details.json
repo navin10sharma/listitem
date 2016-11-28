@@ -1,0 +1,51 @@
+[{
+	"picture":"assets/images/ca1.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Caption.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+},
+{
+   "picture":"assets/images/ca2.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Katriss.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+},
+{
+    "picture":"assets/images/tony.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Tony.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+},
+
+{
+    "picture":"assets/images/lio.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Lio.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+
+},
+   {
+    "picture":"assets/images/thor.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Chris.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+    },
+
+ {
+   	"picture":"assets/images/hugh.jpg",
+
+	 "list": {
+	 "Heading1":"Hello Hugh.",
+	 "Heading2":"Hello informal",
+	 "paragraph":"for friends, coleagues, younger people."}
+}]

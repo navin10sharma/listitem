@@ -1,33 +1,66 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Details</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content>
-  <!--card 1-->
+  <ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Details</ion-title>
+    </ion-navbar>
+    </ion-header>
+  <ion-content>
   <ion-card>
-
-  <ion-item>
-    <ion-avatar item-left>
-      <img src="assets/images/user.jpg">
-    </ion-avatar>
-    <h2>Marty McFly</h2>
-    <p>November 5, 1955</p>
-  </ion-item>
-
-  <img src="assets/images/ca2.jpg">
-
-  <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
-       out of a DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
-          out of a DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
-             out of a DeLorean?! Whoa. This is heavy.</p>
-  </ion-card-content>
-
-
-</ion-card>
-</ion-content>
+    <img  src= "assets/images/ca1.jpg">
+   <ion-card-content >
+   <ion-list>
+   <ion-item >
+     <ion-row>
+    <ion-col width-80>
+    <h2 class="heading1">Hello(informal)</h2>
+     <h2 class="heading2">caption </h2>
+     <p>for friends,colleagues and younger people</p>
+     </ion-col>
+   <ion-col width-20>
+     <audio-track #track1 [track]="singleTrack">
+        <audio-track-play light [audioTrack]="track1">
+        </audio-track-play>
+       </audio-track>
+     </ion-col>
+   </ion-row>
+     </ion-item>
+     </ion-list>
+     <ion-list>
+     <ion-item >
+   <ion-row>
+   <ion-col width-80>
+     <h2 class="heading1">Hello(formal)</h2>
+     <h2 class="heading2">Katriss</h2>
+     <p>Greet people who are not so close to you</p>
+   </ion-col>
+    <ion-col width-20>
+     <audio-track #track2 [track]="singleTrack">
+        <audio-track-play light [audioTrack]="track2">
+        </audio-track-play>
+       </audio-track>
+   </ion-col>
+     </ion-row>
+     </ion-item>
+     </ion-list>
+     <ion-list>
+      <ion-item >
+      <ion-row>
+   <ion-col width-80>
+     <h2 class="heading1">How are you?</h2>
+     <h2 class="heading2"> caption</h2>
+     <p>Combodians usually ask this question</p>
+  </ion-col>
+     <ion-col width-20>
+     <audio-track #track3 [track]="singleTrack">
+        <audio-track-play light [audioTrack]="track3">
+        </audio-track-play>
+       </audio-track>
+   </ion-col>
+     </ion-row>
+     </ion-item>
+     </ion-list>
+    </ion-card-content>
+   </ion-card>
+  </ion-content>
