@@ -1,20 +1,20 @@
-  <ion-header>
-    <ion-navbar >
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Home</ion-title>
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Home</ion-title>
     </ion-navbar>
-    </ion-header>
+</ion-header>
 
-  <ion-content padding >
-    <ion-card *ngFor="let data of list" (click)="cardDetails()">
-   <img src={{data.picture}}>
-      <ion-card-content>
-        <h3>{{data.list.Heading1}}</h3>
-        <p>Super Hero of the Hollywood movies.</p>
-        <p>The Legend of the universe.</p>
+<ion-content padding>
+    <ion-card *ngFor=" let data of list; let i= index" (click)="cardDetails(i)">
+        <img src={{data.picture}}>
+        <ion-card-content>
+            <h3>{{data.list.Heading1}}</h3>
+            <p>Super Hero of the Hollywood movies.</p>
+            <p>The Legend of the universe.</p>
         </ion-card-content>
 
-     </ion-card>
-    </ion-content>
+    </ion-card>
+</ion-content>

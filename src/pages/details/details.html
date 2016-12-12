@@ -1,66 +1,70 @@
-  <ion-header>
+<ion-header>
     <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Details</ion-title>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Details</ion-title>
     </ion-navbar>
-    </ion-header>
-  <ion-content>
-  <ion-card>
-    <img  src= "assets/images/ca1.jpg">
-   <ion-card-content >
-   <ion-list>
-   <ion-item >
-     <ion-row>
-    <ion-col width-80>
-    <h2 class="heading1">Hello(informal)</h2>
-     <h2 class="heading2">caption </h2>
-     <p>for friends,colleagues and younger people</p>
-     </ion-col>
-   <ion-col width-20>
-     <audio-track #track1 [track]="singleTrack">
-        <audio-track-play light [audioTrack]="track1">
-        </audio-track-play>
-       </audio-track>
-     </ion-col>
-   </ion-row>
-     </ion-item>
-     </ion-list>
-     <ion-list>
-     <ion-item >
-   <ion-row>
-   <ion-col width-80>
-     <h2 class="heading1">Hello(formal)</h2>
-     <h2 class="heading2">Katriss</h2>
-     <p>Greet people who are not so close to you</p>
-   </ion-col>
-    <ion-col width-20>
-     <audio-track #track2 [track]="singleTrack">
-        <audio-track-play light [audioTrack]="track2">
-        </audio-track-play>
-       </audio-track>
-   </ion-col>
-     </ion-row>
-     </ion-item>
-     </ion-list>
-     <ion-list>
-      <ion-item >
-      <ion-row>
-   <ion-col width-80>
-     <h2 class="heading1">How are you?</h2>
-     <h2 class="heading2"> caption</h2>
-     <p>Combodians usually ask this question</p>
-  </ion-col>
-     <ion-col width-20>
-     <audio-track #track3 [track]="singleTrack">
-        <audio-track-play light [audioTrack]="track3">
-        </audio-track-play>
-       </audio-track>
-   </ion-col>
-     </ion-row>
-     </ion-item>
-     </ion-list>
-    </ion-card-content>
-   </ion-card>
-  </ion-content>
+</ion-header>
+<ion-content>
+    <ion-slides pager #mySlider [options]="mySlideOptions">
+        <ion-slide *ngFor="let data of Details">
+            <ion-card>
+                <img src={{data.details.image}}>
+                <ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-row>
+                                <ion-col width-80>
+                                    <h2 class="heading1">{{data.details.content.title1}}</h2>
+                                    <h2 class="heading2">{{data.details.content.title2}} </h2>
+                                    <p>{{data.details.content.paragraph1}}</p>
+                                </ion-col>
+                                <ion-col width-20>
+                                    <audio-track #track1 [track]="singleTrack">
+                                        <audio-track-play light [audioTrack]="track1">
+                                        </audio-track-play>
+                                    </audio-track>
+                                </ion-col>
+                            </ion-row>
+                        </ion-item>
+                    </ion-list>
+                    <ion-list>
+                        <ion-item>
+                            <ion-row>
+                                <ion-col width-80>
+                                    <h2 class="heading1">{{data.details.content.title3}}</h2>
+                                    <h2 class="heading2">{{data.details.content.title4}} </h2>
+                                    <p>{{data.details.content.paragraph2}}</p>
+                                </ion-col>
+                                <ion-col width-20>
+                                    <audio-track #track2 [track]="singleTrack">
+                                        <audio-track-play light [audioTrack]="track2">
+                                        </audio-track-play>
+                                    </audio-track>
+                                </ion-col>
+                            </ion-row>
+                        </ion-item>
+                    </ion-list>
+                    <ion-list>
+                        <ion-item>
+                            <ion-row>
+                                <ion-col width-80>
+                                    <h2 class="heading1">{{data.details.content.title5}}</h2>
+                                    <h2 class="heading2">{{data.details.content.title6}} </h2>
+                                    <p>{{data.details.content.paragraph3}}</p>
+                                </ion-col>
+                                <ion-col width-20>
+                                    <audio-track #track3 [track]="singleTrack">
+                                        <audio-track-play light [audioTrack]="track3">
+                                        </audio-track-play>
+                                    </audio-track>
+                                </ion-col>
+                            </ion-row>
+                        </ion-item>
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

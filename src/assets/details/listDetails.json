@@ -1,11 +1,26 @@
-[{  
-	"id":"0001",
+[{  "id":"0001",
 	"picture":"assets/images/ca1.jpg",
 
 	 "list": {
 	 "Heading1":"Hello Caption.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+
+	 "details": {
+	 "image":"assets/images/ca1.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+
+	 
+	 }
 },
 {    "id":"0002",
    "picture":"assets/images/ca2.jpg",
@@ -13,24 +28,69 @@
 	 "list": {
 	 "Heading1":"Hello Katriss.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+	  "details": {
+	 "image":"assets/images/ca2.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+
+	 
+	 }
 },
 {    "id":"0003",
-    "picture":"assets/images/ca1.jpg",
+    "picture":"assets/images/tony.jpg",
 
 	 "list": {
 	 "Heading1":"Hello Tony.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+	  "details": {
+	 "image":"assets/images/tony.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+
+	 
+	 }
 },
 
 {   "id":"0004",
-    "picture":"assets/images/ca2.jpg",
+    "picture":"assets/images/lio.jpg",
 
 	 "list": {
 	 "Heading1":"Hello Lio.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+	  "details": {
+	 "image":"assets/images/lio.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+
+	 
+	 }
 
 },
    { "id":"0005",
@@ -39,7 +99,20 @@
 	 "list": {
 	 "Heading1":"Hello Chris.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+	  "details": {
+	 "image":"assets/images/thor.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+	 }
     },
 
  {  "id":"0006",
@@ -48,5 +121,20 @@
 	 "list": {
 	 "Heading1":"Hello Hugh.",
 	 "Heading2":"Hello informal",
-	 "paragraph":"for friends, coleagues, younger people."}
+	 "paragraph":"for friends, coleagues, younger people."},
+	  "details": {
+	 "image":"assets/images/hugh.jpg",
+	 "content":{
+	 	"title1":"Hello (informal)",
+	 	"title2":"Sous-dey",
+	 	"paragraph1":"for friends, coleagues & younger people",
+	 	"title3":"Hello (formal)",
+	 	"title4":"chum reap suor",
+	 	"paragraph2":"greet people who are not so close to you",
+	 	"title5":"how are you?",
+	 	"title6":"ter neak sok sabay te?",
+	 	"paragraph3":"combodins usually ask this question"}
+
+	 
+	 }
 }]

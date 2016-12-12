@@ -1,39 +1,72 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
-import { MediaPlugin } from 'ionic-native';
-import { AudioProvider } from '../../app/ionic-audio/ionic-audio.module';
+import {NavController, NavParams} from 'ionic-angular';
+import {AudioProvider} from '../../app/ionic-audio/ionic-audio.module';
+import {DetailsService} from './details.service';
+import {Slides} from 'ionic-angular';
+import {ViewChild} from '@angular/core';
 
 @Component({
-  selector: 'page-details',
-  templateUrl: 'details.html'
-  
+    selector: 'page-details',
+    templateUrl: 'details.html',
+    providers: [DetailsService]
+
 })
 export class DetailsPage {
-   myTracks: any[];
-  singleTrack: any;
-  allTracks: any[];
-  selectedTrack: number;
+    @ViewChild('mySlider') slider: Slides;
 
+    Details: any[] =
+        [{
+            list: {},
+            details: {
+                content: {}
+            }
+        }];
 
-constructor(public navCtrl: NavController,private _audioProvider: AudioProvider ) {
-    
+    singleTrack: any;
+    index: number;
 
-  
-    this.singleTrack = {
-      src: "assets/audio/avengers.mp3",
-      artist: 'Stephane Wrembel',
-      title: 'Avengers',
-      preload: 'metadata' // tell the plugin to preload metadata such as duration for this track,  set to 'none' to turn off
+    mySlideOptions: any = {
+        initialSlide: 1,
+        loop: true,
+        autoplay: ''
+
     };
 
-  }
+    constructor(public navCtrl: NavController,
+                private navParams: NavParams,
+                public detailsService: DetailsService) {
 
-  ngAfterContentInit() {     
-    // get all tracks managed by AudioProvider so we can control playback via the API
-    this.allTracks = this._audioProvider.tracks; 
-  }
-    
-  onTrackFinished(track: any) {
-    console.log('Track finished', track);
-  }
+        this.mySlideOptions.initialSlide = this.navParams.get('index');
+
+        this.detailsService.getListDetails()
+            .subscribe((response)=> {
+                this.Details = response
+            });
+
+        this.singleTrack = {
+            src: "assets/audio/avengers.mp3",
+            artist: 'Stephane Wrembel',
+            title: 'Avengers',
+            preload: 'metadata'
+        };
+
+    }
+
+    onTrackFinished(track: any) {
+        console.log('Track finished', track);
+    }
+
 }
+
+
+             
+           
+             
+               
+            
+   
+            
+     
+
+    
+ 
